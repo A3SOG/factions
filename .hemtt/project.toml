@@ -1,0 +1,14 @@
+name = "SOG Factions"
+prefix = "sog_factions"
+author = "SOG"
+mainprefix = "z"
+
+[files]
+include = [
+    "mod.cpp",
+    "sog_factions_version.json",
+    "*.paa"
+]
+
+[version]
+git_hash = 0 # Disabled

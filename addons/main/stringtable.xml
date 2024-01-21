@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="SOG Tahoe">
+    <Package name="Vehicle">
+        <Key ID="STR_Veh_Turn_Left_allumage">
+            <Original>&lt;t color='#dcdcdc'&gt;Left turn signal [Q]&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Turn_Left_eteint">
+            <Original>&lt;t color='#ffd800'&gt;Left turn signal [Q]&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Turn_Right_allumage">
+            <Original>&lt;t color='#dcdcdc'&gt;Right turn signal [E]&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Turn_Right_eteint">
+            <Original>&lt;t color='#ffd800'&gt;Right turn signal [E]&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Code_1">
+            <Original>&lt;t color='#ffd800'&gt;CODE 1 [NUM1]&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Code_2">
+            <Original>&lt;t color='#ffd800'&gt;CODE 2 [NUM2]&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Code_3">
+            <Original>&lt;t color='#ffd800'&gt;CODE 3 [NUM3]&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Camera_ON">
+            <Original>Camera ON</Original>
+        </Key>
+        <Key ID="STR_Veh_Camera_OFF">
+            <Original>Camera OFF</Original>
+        </Key>
+        <Key ID="STR_Veh_Camera">
+            <Original>&lt;t color='#ccdaae'&gt;Camera&lt;/t&gt;</Original>
+        </Key>
+        <Key ID="STR_Veh_Beacons_ON">
+            <Original>Beacons ON</Original>
+        </Key>
+        <Key ID="STR_Veh_Beacons_OFF">
+            <Original>Beacons ON</Original>
+        </Key>
+    </Package>
+</Project>
