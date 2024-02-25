@@ -2,7 +2,7 @@
 
 diag_log "CAM WORKING";
 
-private ["_vcl", "_cam", "_cam1"];
+private ["_vcl", "_cam", "_cam0", "_cam1", "_cam2", "_cam3", "_cam4"];
 
 _vcl = _this;
 _cam0 = "#(argb,256,512,1)r2t(rendertarget0,1.0)";
@@ -20,20 +20,20 @@ if ((_vcl getVariable "cam")) exitWith {
 
 	sleep 0.5;
 
-	_vcl setObjectTextureGlobal [18, ""];
-	_vcl setObjectTextureGlobal [19, ""];
+	_vcl setObjectTextureGlobal [27, ""];
+	_vcl setObjectTextureGlobal [28, ""];
 };
 
 _vcl setVariable ["cam", true, true];
 
 while { (alive _vcl) && (_vcl getVariable "cam") } do {
-	_vcl setObjectTextureGlobal [18, _cam1];
-	_vcl setObjectTextureGlobal [19, _cam2];
+	_vcl setObjectTextureGlobal [27, _cam3];
+	_vcl setObjectTextureGlobal [28, _cam4];
 
 	if(!(_vcl getVariable "cam")) exitWith {
-		_vcl setObjectTextureGlobal [18, ""];
-		_vcl setObjectTextureGlobal [19, ""];
+		_vcl setObjectTextureGlobal [27, ""];
+		_vcl setObjectTextureGlobal [28, ""];
 	};
 	sleep 0.2;
-}; // END WHILE
+};
 exit;

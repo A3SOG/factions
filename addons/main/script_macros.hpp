@@ -146,7 +146,7 @@
 
 #define MACRO_PCAM \
     class pCam { \
-        displayName = "$STR_Veh_Camera_ON"; \
+        displayName = "$STR_Veh_Camera"; \
         displayNameDefault = ""; \
         position = "drivewheel"; \
         radius = 1; \

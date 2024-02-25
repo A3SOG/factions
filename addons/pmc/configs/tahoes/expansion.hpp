@@ -55,6 +55,7 @@ class CLASS(tahoe_UNM_PMC_01): tahoe_UNM {
 		MACRO_CODE_1
 		MACRO_CODE_2
 		MACRO_CODE_3
+		MACRO_PCAM
 		MACRO_TURN_LEFT_ALLUMAGE
 		MACRO_TURN_LEFT_ETEINT
 		MACRO_TURN_RIGHT_ALLUMAGE
@@ -113,6 +114,6 @@ class B_SOG_suburban_PMC_01: CLASS(suburban_PMC_01) {
 };
 class B_SOG_tahoe_UNM_PMC_01: CLASS(tahoe_UNM_PMC_01) {
 	scope = 2;
-	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","camo9","camo10","camo11","camo12","camo13","camo14","camo15","camo16","camo17","camo18","camo19","camo20","license1","license2","license3","license4","license5","license6","license7"};
-	hiddenSelectionsTextures[] = {"\tahoe_08\data\TAHOE_UNM_co.paa","\tahoe_08\data\GMT_rad_co.paa","\tahoe_08\data\glass_black.paa","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","camo9","camo10","camo11","camo12","camo13","camo14","camo15","camo16","camo17","camo18","camo19","camo20","license1","license2","license3","license4","license5","license6","license7","pip_lscreen","pip_rscreen"};
+	hiddenSelectionsTextures[] = {"\tahoe_08\data\TAHOE_UNM_co.paa","\tahoe_08\data\GMT_rad_co.paa","\tahoe_08\data\glass_black.paa","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""};
 };
