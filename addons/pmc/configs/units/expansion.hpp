@@ -17,6 +17,33 @@ class CLASS(pmc_operative_unarmed): CLASS(pmc_operative_base) {
 	class Eventhandlers: Eventhandlers {
 		init = "[(_this select 0), ""default""] call sog_factions_pmc_fnc_setUnitLoadout; [(_this select 0), nil, nil] call BIS_fnc_unitHeadgear;";
 	};
+
+	class ACE_Actions: ACE_Actions {};
+
+	class ACE_SelfActions: ACE_SelfActions {
+		class getacF110 {
+			displayName = "Getac F110";
+			condition = "true";
+			// icon = "";
+			class getacOpen {
+				displayName = "Open";
+				condition = "('SOG_Tablet' in (items player))";
+				exceptions[] = {};
+				statement = "[] execVM 'CoalaOs\CoalaOsMain.sqf'";
+			};
+		};
+		class phone {
+			displayName = "Phone";
+			condition = "true";
+			// icon = "";
+			class phoneOpen {
+				displayName = "Open";
+				condition = "('SOG_Phone' in (items player))";
+				exceptions[] = {};
+				statement = "[] spawn sog_client_phone_fnc_openPhone";
+			};
+		};
+	};
 };
 class CLASS(pmc_k9): MFR_C_GermanShepherd_BLK {
 	scope = 2;
@@ -61,7 +88,7 @@ class CLASS(pmc_operative_k9_security): CLASS(pmc_operative_unarmed) {
 		init = "[(_this select 0), ""security""] call sog_factions_pmc_fnc_setUnitLoadout; [(_this select 0), nil, nil] call BIS_fnc_unitHeadgear; [(_this select 0)] spawn sog_factions_pmc_fnc_initK9Unit;";
 	};
 
-	class ACE_SelfActions {
+	class ACE_SelfActions: ACE_SelfActions {
 		class k9Dog {
 			displayName = "K9 Commands";
 			condition = "true";

@@ -26,6 +26,9 @@ class CLASS(pmc_operative_base): B_Soldier_F {
 	respawnLinkedItems[] = {};
 
 	class Eventhandlers: Eventhandlers {};
+
+	class ACE_Actions: ACE_Actions {};
+	class ACE_SelfActions: ACE_SelfActions {};
 };
 
 class CLASS(pmc_vip_base): CLASS(pmc_operative_base) {

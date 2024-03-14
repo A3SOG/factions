@@ -2,6 +2,8 @@ class CfgVehicles {
 	class B_Soldier_base_F;
 	class B_Soldier_F: B_Soldier_base_F {
 		class Eventhandlers;
+		class ACE_Actions;
+		class ACE_SelfActions;
 	};
 	class Car_F {
 		class Eventhandlers;
