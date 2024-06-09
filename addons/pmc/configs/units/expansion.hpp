@@ -4,15 +4,15 @@ class CLASS(pmc_operative_unarmed): CLASS(pmc_operative_base) {
 	scopeArsenal = 2;
 	displayName = "Operative I (Unarmed)";
 	uniformClass = "SOG_Clothes_BDU_F_TN_BK_BK_BK";
-	backpack = "SOG_Pack_Safariland_A_BK_BK";
+	backpack = "";
 	weapons[] = {};
 	respawnWeapons[] = {};
 	items[] = {ITEM_2("ACE_fieldDressing"), ITEM_2("ACE_packingBandage"), "ACE_morphine", "ACE_tourniquet", "SOG_Phone"};
 	respawnItems[] = {ITEM_2("ACE_fieldDressing"), ITEM_2("ACE_packingBandage"), "ACE_morphine", "ACE_tourniquet", "SOG_Phone"};
 	magazines[] = {};
 	respawnMagazines[] = {};
-	linkedItems[] = {DEFAULT_ITEMS};
-	respawnLinkedItems[] = {DEFAULT_ITEMS};
+	linkedItems[] = {DEFAULT_ITEMS, "SOG_Vest_Safariland_A_BK_BK"};
+	respawnLinkedItems[] = {DEFAULT_ITEMS, "SOG_Vest_Safariland_A_BK_BK"};
 
 	class Eventhandlers: Eventhandlers {
 		init = "[(_this select 0), ""default""] call sog_factions_pmc_fnc_setUnitLoadout; [(_this select 0), nil, nil] call BIS_fnc_unitHeadgear;";
@@ -30,6 +30,47 @@ class CLASS(pmc_operative_unarmed): CLASS(pmc_operative_base) {
 				condition = "('SOG_Tablet' in (items player))";
 				exceptions[] = {};
 				statement = "[] execVM 'CoalaOs\CoalaOsMain.sqf'";
+			};
+		};
+		class idBadge {
+			displayName = "ID Badge";
+			condition = "true";
+			// icon = "";
+			class idbadgeGarrison {
+				displayName = "Garrison";
+				condition = "true";
+				exceptions[] = {};
+				statement = "['Garrison'] spawn sog_card_fnc_setBadge";
+			};
+			class idBadgeMiddle {
+				displayName = "Middle";
+				condition = "true";
+				exceptions[] = {};
+				statement = "['Middle'] spawn sog_card_fnc_setBadge";
+			};
+			class idBadgePocket01 {
+				displayName = "Pocket 1";
+				condition = "true";
+				exceptions[] = {};
+				statement = "['Pocket01'] spawn sog_card_fnc_setBadge";
+			};
+			class idBadgePocket02 {
+				displayName = "Pocket 2";
+				condition = "true";
+				exceptions[] = {};
+				statement = "['Pocket02'] spawn sog_card_fnc_setBadge";
+			};
+			class idBadgePocket03 {
+				displayName = "Pocket 3";
+				condition = "true";
+				exceptions[] = {};
+				statement = "['Pocket03'] spawn sog_card_fnc_setBadge";
+			};
+			class idBadgeRemove {
+				displayName = "Remove";
+				condition = "true";
+				exceptions[] = {};
+				statement = "removeBackpack player;";
 			};
 		};
 		class phone {
