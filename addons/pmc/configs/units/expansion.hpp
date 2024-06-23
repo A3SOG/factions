@@ -20,71 +20,7 @@ class CLASS(pmc_operative_unarmed): CLASS(pmc_operative_base) {
 
 	class ACE_Actions: ACE_Actions {};
 
-	class ACE_SelfActions: ACE_SelfActions {
-		class getacF110 {
-			displayName = "Getac F110";
-			condition = "true";
-			// icon = "";
-			class getacOpen {
-				displayName = "Open";
-				condition = "('SOG_Tablet' in (items player))";
-				exceptions[] = {};
-				statement = "[] execVM 'CoalaOs\CoalaOsMain.sqf'";
-			};
-		};
-		class idBadge {
-			displayName = "ID Badge";
-			condition = "true";
-			// icon = "";
-			class idbadgeGarrison {
-				displayName = "Garrison";
-				condition = "true";
-				exceptions[] = {};
-				statement = "['Garrison'] spawn sog_card_fnc_setBadge";
-			};
-			class idBadgeMiddle {
-				displayName = "Middle";
-				condition = "true";
-				exceptions[] = {};
-				statement = "['Middle'] spawn sog_card_fnc_setBadge";
-			};
-			class idBadgePocket01 {
-				displayName = "Pocket 1";
-				condition = "true";
-				exceptions[] = {};
-				statement = "['Pocket01'] spawn sog_card_fnc_setBadge";
-			};
-			class idBadgePocket02 {
-				displayName = "Pocket 2";
-				condition = "true";
-				exceptions[] = {};
-				statement = "['Pocket02'] spawn sog_card_fnc_setBadge";
-			};
-			class idBadgePocket03 {
-				displayName = "Pocket 3";
-				condition = "true";
-				exceptions[] = {};
-				statement = "['Pocket03'] spawn sog_card_fnc_setBadge";
-			};
-			class idBadgeRemove {
-				displayName = "Remove";
-				condition = "true";
-				exceptions[] = {};
-				statement = "removeBackpack player;";
-			};
-		};
-		class phone {
-			displayName = "Phone";
-			condition = "true";
-			// icon = "";
-			class phoneOpen {
-				displayName = "Open";
-				condition = "('SOG_Phone' in (items player))";
-				exceptions[] = {};
-				statement = "[] spawn sog_client_phone_fnc_openPhone";
-			};
-		};
-	};
+	class ACE_SelfActions: ACE_SelfActions {};
 };
 class CLASS(pmc_k9): MFR_C_GermanShepherd_BLK {
 	scope = 2;
